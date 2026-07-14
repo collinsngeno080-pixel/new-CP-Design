@@ -1,0 +1,182 @@
+/* ============================================================
+   FILE LABEL PRO — PRICING PAGE
+   (Nav and Footer reuse the shared .fl-page styles from
+   filelabelpro.css — only the hero/pricing content below is
+   scoped to this stylesheet.)
+   ============================================================ */
+
+.flpp-landing {
+  --navy: #1B2A4A;
+  --orange: #E8783C;
+  --orange-dark: #D96A2E;
+  --cream: #F0EEE6;
+  --gray-text: #5B6472;
+  --white: #FFFFFF;
+  --border-light: #E7E5DD;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.5;
+}
+
+.flpp-landing a { text-decoration: none; color: inherit; }
+
+/* HERO */
+.flpp-landing .flpp-hero {
+  background: var(--cream);
+  text-align: center;
+  padding: 140px 24px 100px;
+}
+
+.flpp-landing .flpp-hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+
+.flpp-landing .flpp-hero h1 .flpp-accent { color: var(--orange); }
+
+.flpp-landing .flpp-hero p {
+  max-width: 640px;
+  margin: 28px auto 0;
+  font-size: 19px;
+  color: var(--gray-text);
+}
+
+.flpp-landing .flpp-btn-primary {
+  display: inline-block;
+  margin-top: 40px;
+  background: var(--orange);
+  color: var(--white);
+  padding: 18px 44px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.flpp-landing .flpp-btn-primary:hover {
+  background: var(--orange-dark);
+  transform: translateY(-1px);
+}
+
+/* PRICING */
+.flpp-landing .flpp-pricing {
+  padding: 110px 40px;
+  text-align: center;
+  background: var(--white);
+}
+
+.flpp-landing .flpp-pricing h2 { font-size: 36px; font-weight: 800; }
+
+.flpp-landing .flpp-pricing-sub { color: var(--gray-text); font-size: 17px; margin-top: 14px; }
+
+.flpp-landing .flpp-plan-card {
+  max-width: 420px;
+  margin: 56px auto 0;
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 20px 50px rgba(27,42,74,0.08);
+  overflow: hidden;
+  text-align: left;
+}
+
+.flpp-landing .flpp-plan-header {
+  background: var(--orange);
+  color: var(--white);
+  padding: 24px 36px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.flpp-landing .flpp-plan-body { padding: 40px 36px 36px; }
+
+.flpp-landing .flpp-plan-price { text-align: center; }
+
+.flpp-landing .flpp-plan-price .flpp-amount {
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.flpp-landing .flpp-plan-price .flpp-period {
+  display: block;
+  color: var(--gray-text);
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.flpp-landing .flpp-plan-features { list-style: none; margin-top: 34px; }
+
+.flpp-landing .flpp-plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  padding: 9px 0;
+}
+
+.flpp-landing .flpp-check { color: var(--orange); font-weight: 700; margin-top: 2px; }
+
+.flpp-landing .flpp-format-sublist {
+  list-style: none;
+  margin: 8px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.flpp-landing .flpp-format-sublist li { font-size: 14.5px; color: var(--gray-text); padding: 0; display: block; }
+
+.flpp-landing .flpp-btn-plan {
+  display: block;
+  text-align: center;
+  background: var(--orange);
+  color: var(--white);
+  padding: 17px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 32px;
+  transition: background 0.2s ease;
+}
+.flpp-landing .flpp-btn-plan:hover { background: var(--orange-dark); }
+
+/* UPGRADE STRIP */
+.flpp-landing .flpp-upgrade-strip {
+  max-width: 620px;
+  margin: 44px auto 0;
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 32px 40px;
+  text-align: center;
+}
+
+.flpp-landing .flpp-upgrade-strip h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.flpp-landing .flpp-upgrade-strip p {
+  font-size: 15.5px;
+  color: var(--gray-text);
+  line-height: 1.6;
+}
+
+.flpp-landing .flpp-upgrade-link { color: var(--orange); font-weight: 600; white-space: nowrap; }
+
+@media (max-width: 720px) {
+  .flpp-landing .flpp-hero { padding: 100px 24px 70px; }
+  .flpp-landing .flpp-hero h1 { font-size: 34px; }
+  .flpp-landing .flpp-hero p { font-size: 17px; }
+  .flpp-landing .flpp-pricing { padding: 70px 24px; }
+  .flpp-landing .flpp-plan-card { margin-left: 0; margin-right: 0; }
+  .flpp-landing .flpp-upgrade-strip { padding: 26px 24px; }
+}

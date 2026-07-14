@@ -1,0 +1,192 @@
+/* ============================================================
+   COPIER TABS PRO — EARLY ACCESS / PRICING PAGE
+   (Nav and Footer reuse the shared .ct-page styles from
+   copiertabspro.css — only the hero/pricing/transparency
+   content below is scoped to this stylesheet.)
+   ============================================================ */
+
+.ctpea-landing {
+  --navy: #1B2A4A;
+  --orange: #E8783C;
+  --orange-dark: #D96A2E;
+  --cream: #F0EEE6;
+  --gray-text: #5B6472;
+  --white: #FFFFFF;
+  --border-light: #E7E5DD;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.5;
+}
+
+.ctpea-landing a { text-decoration: none; color: inherit; }
+
+/* HERO */
+.ctpea-landing .ctpea-hero {
+  background: var(--cream);
+  text-align: center;
+  padding: 100px 40px 110px;
+}
+
+.ctpea-landing .ctpea-eyebrow {
+  display: inline-block;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.ctpea-landing .ctpea-hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+
+.ctpea-landing .ctpea-hero h1 .ctpea-accent { color: var(--orange); }
+
+.ctpea-landing .ctpea-hero p {
+  max-width: 620px;
+  margin: 28px auto 0;
+  font-size: 19px;
+  color: var(--gray-text);
+}
+
+.ctpea-landing .ctpea-btn-primary {
+  display: inline-block;
+  margin-top: 40px;
+  background: var(--orange);
+  color: var(--white);
+  padding: 18px 44px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.ctpea-landing .ctpea-btn-primary:hover {
+  background: var(--orange-dark);
+  transform: translateY(-1px);
+}
+
+/* FOUNDING MEMBER PRICING */
+.ctpea-landing .ctpea-pricing {
+  padding: 110px 40px 90px;
+  text-align: center;
+  background: var(--white);
+}
+
+.ctpea-landing .ctpea-pricing h2 { font-size: 36px; font-weight: 800; }
+
+.ctpea-landing .ctpea-pricing-sub { color: var(--gray-text); font-size: 17px; margin-top: 14px; }
+
+.ctpea-landing .ctpea-plan-card {
+  max-width: 440px;
+  margin: 56px auto 0;
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 20px 50px rgba(27,42,74,0.08);
+  overflow: hidden;
+  text-align: left;
+}
+
+.ctpea-landing .ctpea-plan-header {
+  background: var(--orange);
+  color: var(--white);
+  padding: 24px 36px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.ctpea-landing .ctpea-plan-body { padding: 40px 36px 36px; }
+
+.ctpea-landing .ctpea-plan-price { text-align: center; }
+
+.ctpea-landing .ctpea-plan-price .ctpea-amount {
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--orange);
+}
+
+.ctpea-landing .ctpea-plan-price .ctpea-period {
+  display: block;
+  color: var(--gray-text);
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.ctpea-landing .ctpea-plan-features { list-style: none; margin-top: 34px; }
+
+.ctpea-landing .ctpea-plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  padding: 9px 0;
+}
+
+.ctpea-landing .ctpea-check { color: var(--orange); font-weight: 700; margin-top: 2px; }
+
+.ctpea-landing .ctpea-btn-plan {
+  display: block;
+  text-align: center;
+  background: var(--orange);
+  color: var(--white);
+  padding: 17px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 32px;
+  transition: background 0.2s ease;
+}
+.ctpea-landing .ctpea-btn-plan:hover { background: var(--orange-dark); }
+
+/* EXPECTED PUBLIC PRICING (transparency section) */
+.ctpea-landing .ctpea-transparency {
+  background: var(--cream);
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.ctpea-landing .ctpea-transparency-inner { max-width: 640px; margin: 0 auto; }
+
+.ctpea-landing .ctpea-transparency h3 { font-size: 24px; font-weight: 800; margin-bottom: 18px; }
+
+.ctpea-landing .ctpea-transparency p { font-size: 16.5px; color: var(--gray-text); line-height: 1.7; }
+
+.ctpea-landing .ctpea-price-range {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 24px 0 20px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.ctpea-landing .ctpea-price-range .ctpea-range { font-size: 34px; }
+.ctpea-landing .ctpea-price-range .ctpea-range .ctpea-orange-num { color: var(--orange); }
+
+.ctpea-landing .ctpea-price-range .ctpea-unit {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
+@media (max-width: 720px) {
+  .ctpea-landing .ctpea-hero { padding: 70px 24px 80px; }
+  .ctpea-landing .ctpea-hero h1 { font-size: 32px; }
+  .ctpea-landing .ctpea-hero p { font-size: 17px; }
+  .ctpea-landing .ctpea-pricing { padding: 70px 24px; }
+  .ctpea-landing .ctpea-plan-card { margin-left: 0; margin-right: 0; }
+  .ctpea-landing .ctpea-transparency { padding: 50px 24px; }
+}

@@ -1,0 +1,8 @@
+# Redirect /litlabeler to /litlabeler/ for correct relative paths
+/litlabeler /litlabeler/ 301
+
+# Serve static LitLabeler page
+/litlabeler/ /litlabeler/index.html 200
+
+# SPA fallback for all other routes
+/* /index.html 200
