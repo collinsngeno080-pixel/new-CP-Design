@@ -15,6 +15,7 @@ const philosophyItems = [
         icon: "/images/Hammer Icon.png",
         title: "Craft meets code",
         description: "We still build by hand and test every feature in the real world.",
+        flip: true,
     },
 ];
 
@@ -45,7 +46,12 @@ export function PhilosophySection() {
                                 boxShadow: "0px 3px 10px rgba(0,0,0,0.08)",
                             }}
                         >
-                            <img src={item.icon} alt={item.title} className="w-10 h-10 mb-4 object-contain" />
+                            <img
+                                src={item.icon}
+                                alt={item.title}
+                                className="w-10 h-10 mb-4 object-contain"
+                                style={item.flip ? { transform: "scaleX(-1)" } : undefined}
+                            />
                             <h3 className="font-bold text-base mb-2 text-[#3F6B3B]">{item.title}</h3>
                             <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                         </motion.div>
