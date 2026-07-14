@@ -42,7 +42,7 @@ export function PhilosophySection() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="flex flex-col items-center text-center bg-white p-8 w-full md:w-[364px] h-[257px] rounded-[23px] shrink-0"
                             style={{
-                                boxShadow: "0px 3px 6.6px 2px rgba(0,0,0,0.25)",
+                                boxShadow: "0px 3px 10px rgba(0,0,0,0.08)",
                             }}
                         >
                             <img src={item.icon} alt={item.title} className="w-10 h-10 mb-4 object-contain" />

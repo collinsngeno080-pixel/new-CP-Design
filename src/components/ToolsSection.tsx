@@ -9,8 +9,6 @@ const tools = [
     {
         name: "ExhibitPro",
         logo: exhibitProLogo,
-        logoWidth: 150,
-        logoHeight: 115,
         description: "Exhibit labels and tabs, ready to assemble into your set.",
         cta: "Try exhibit pro",
         link: "/exhibitpro",
@@ -25,6 +23,7 @@ const tools = [
     {
         name: "Copier tabsPro",
         logo: copierTabsProLogo,
+        logoWidth: 115,
         description: "File names to print-ready tabs.",
         cta: "Try copier tabs pro",
         link: "/copier-tabspro",
@@ -59,17 +58,13 @@ export function ToolsSection() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="bg-white p-8 flex flex-col w-full md:w-[364px] h-[370px] rounded-[23px] shrink-0"
-                            style={{ boxShadow: "0px 3px 6.6px 2px rgba(0,0,0,0.25)" }}
+                            style={{ boxShadow: "0px 3px 10px rgba(0,0,0,0.08)" }}
                         >
                             <img
                                 src={tool.logo}
                                 alt={tool.name}
                                 className="mx-auto mb-6 object-contain"
-                                style={
-                                    tool.logoWidth
-                                        ? { width: `${tool.logoWidth}px`, height: `${tool.logoHeight}px` }
-                                        : { height: "110px", width: "auto" }
-                                }
+                                style={{ width: `${tool.logoWidth ?? 150}px`, height: "110px" }}
                             />
                             <p
                                 className="mb-6 flex-1"

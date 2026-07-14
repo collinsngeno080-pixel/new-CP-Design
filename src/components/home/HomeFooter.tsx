@@ -1,7 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import CollegeProduceLogo from "@/assets/college_produce_logo.png";
 
 export function HomeFooter() {
     const navigate = useNavigate();
@@ -26,17 +25,38 @@ export function HomeFooter() {
 
     return (
         <footer className="bg-[#262B3D] text-white" aria-label="Site footer">
-            <div className="max-w-6xl mx-auto px-6 py-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-                    <div>
-                        <img src={CollegeProduceLogo} alt="College Produce" className="h-20 mb-3" />
+            <div className="max-w-[1400px] mx-auto px-6 py-10">
+                <div className="flex flex-col md:flex-row gap-10 items-center">
+                    <div className="shrink-0">
+                        <img src="/images/Footer logo (2).png" alt="College Produce" className="h-24 w-auto" />
                     </div>
 
-                    <div className="text-center">
-                        <h2 className="text-2xl font-bold mb-2">
+                    <div className="text-center flex-1 min-w-0">
+                        <h2
+                            className="mb-2 whitespace-nowrap"
+                            style={{
+                                fontFamily: "Montserrat, sans-serif",
+                                fontWeight: 500,
+                                fontSize: "clamp(22px, 2.6vw, 44px)",
+                                lineHeight: "100%",
+                                letterSpacing: "0%",
+                                color: "#FFFFFF",
+                            }}
+                        >
                             Get back to the work that matters.
                         </h2>
-                        <p className="italic text-white/70 mb-6">
+                        <p
+                            className="mb-6 whitespace-nowrap"
+                            style={{
+                                fontFamily: "Montserrat, sans-serif",
+                                fontWeight: 300,
+                                fontStyle: "italic",
+                                fontSize: "clamp(14px, 1.4vw, 24px)",
+                                lineHeight: "100%",
+                                letterSpacing: "0%",
+                                color: "#FFFFFF",
+                            }}
+                        >
                             Built where the work happens.
                         </p>
                         <Button
@@ -49,7 +69,7 @@ export function HomeFooter() {
                         </Button>
                     </div>
 
-                    <div className="md:text-right" aria-label="Contact information">
+                    <div className="shrink-0 md:text-right" aria-label="Contact information">
                         <h4 className="text-sm font-bold mb-3 tracking-wider text-white/80">CONTACT INFO</h4>
                         <ul className="space-y-2 md:flex md:flex-col md:items-end">
                             <li className="flex items-center gap-2 text-sm">

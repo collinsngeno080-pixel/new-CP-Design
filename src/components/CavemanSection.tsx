@@ -11,51 +11,59 @@ export function CavemanSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="text-center px-8 pt-10 pb-10"
+                        className="relative overflow-hidden text-center px-8 pt-10 pb-10"
                     >
-                        <h2
-                            className="mb-4"
-                            style={{
-                                fontFamily: "Montserrat, sans-serif",
-                                fontWeight: 600,
-                                fontSize: "40px",
-                                lineHeight: "100%",
-                                letterSpacing: "0%",
-                                textAlign: "center",
-                                color: "#3C7D3C",
-                            }}
-                        >
-                            The gap we fill
-                        </h2>
-                        <p
-                            className="mb-4"
-                            style={{
-                                fontFamily: "Montserrat, sans-serif",
-                                fontWeight: 600,
-                                fontSize: "22px",
-                                lineHeight: "100%",
-                                letterSpacing: "0%",
-                                textAlign: "center",
-                                color: "#000000",
-                            }}
-                        >
-                            The part of the work that still happens with your hands.
-                        </p>
-                        <p
-                            className="max-w-2xl mx-auto"
-                            style={{
-                                fontFamily: "Montserrat, sans-serif",
-                                fontWeight: 400,
-                                fontSize: "18px",
-                                lineHeight: "100%",
-                                letterSpacing: "0%",
-                                textAlign: "left",
-                                color: "#000000",
-                            }}
-                        >
-                            Legal technology is racing to automate the intellectual work - research, drafting, analysis. Almost none of it touches the physical work that still has to happen every time: the exhibits, the labels, the tabs, the binders. That work isn't going away as fast as everyone assumes. We build the tools for it, so your team spends less time on the repetitive parts and more time on the case.
-                        </p>
-                        <div className="w-16 h-px bg-foreground/30 mx-auto mt-6" />
+                        <img
+                            src="/images/Grains.png"
+                            alt=""
+                            aria-hidden="true"
+                            className="absolute left-0 top-0 h-full w-auto opacity-20"
+                        />
+                        <div className="relative z-10">
+                            <h2
+                                className="mb-4"
+                                style={{
+                                    fontFamily: "Montserrat, sans-serif",
+                                    fontWeight: 600,
+                                    fontSize: "40px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    textAlign: "center",
+                                    color: "#3C7D3C",
+                                }}
+                            >
+                                The gap we fill
+                            </h2>
+                            <p
+                                className="mb-4"
+                                style={{
+                                    fontFamily: "Montserrat, sans-serif",
+                                    fontWeight: 600,
+                                    fontSize: "22px",
+                                    lineHeight: "100%",
+                                    letterSpacing: "0%",
+                                    textAlign: "center",
+                                    color: "#000000",
+                                }}
+                            >
+                                The part of the work that still happens with your hands.
+                            </p>
+                            <p
+                                className="max-w-4xl mx-auto"
+                                style={{
+                                    fontFamily: "Montserrat, sans-serif",
+                                    fontWeight: 300,
+                                    fontSize: "16px",
+                                    lineHeight: "150%",
+                                    letterSpacing: "0%",
+                                    textAlign: "left",
+                                    color: "#000000",
+                                }}
+                            >
+                                Legal technology is racing to automate the intellectual work - research, drafting, analysis. Almost none of it touches the physical work that still has to happen every time: the exhibits, the labels, the tabs, the binders. That work isn't going away as fast as everyone assumes. We build the tools for it, so your team spends less time on the repetitive parts and more time on the case.
+                            </p>
+                            <div className="w-32 h-0.5 bg-[#3C7D3C] mx-auto mt-6" />
+                        </div>
                     </motion.div>
 
                     <motion.div
