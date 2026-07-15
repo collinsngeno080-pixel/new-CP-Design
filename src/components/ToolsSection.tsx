@@ -16,7 +16,7 @@ const tools = [
     {
         name: "File labelPro",
         logo: fileLabelProLogo,
-        description: "Exhibit labels and tabs, ready to assemble into your set.",
+        description: "Print-ready labels, generated from your existing file names.",
         cta: "Try file label pro",
         link: "/file-labelpro",
     },

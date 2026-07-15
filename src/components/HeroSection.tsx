@@ -54,7 +54,7 @@ export function HeroSection() {
                             color: "#000000",
                         }}
                     >
-                        Your team knows this work. We built the tools that handle the repetitive parts, so your time goes to the case-built by people who've done it for decades.
+                        Your team knows this work. We build the tools that handle the repetitive parts, exhibits, labels, tabs, binders, so your time goes to the case.
                     </p>
                     <Button
                         size="lg"
