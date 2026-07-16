@@ -15,7 +15,8 @@ const philosophyItems = [
     },
     {
         icon: "/images/Keyboard Icon.png",
-        iconSize: 39,
+        iconSize: 73,
+        nudgeY: 3,
         title: "Craft meets code",
         description: "We still build by hand and test every feature in the real world.",
     },
@@ -51,8 +52,12 @@ export function PhilosophySection() {
                                     <img
                                         src={item.icon}
                                         alt={item.title}
-                                        className="object-contain"
-                                        style={{ width: `${item.iconSize}px`, height: `${item.iconSize}px` }}
+                                        className="object-contain max-w-none"
+                                        style={{
+                                            width: `${item.iconSize}px`,
+                                            height: `${item.iconSize}px`,
+                                            transform: item.nudgeY ? `translateY(${item.nudgeY}px)` : undefined,
+                                        }}
                                     />
                                 </div>
                                 <div
