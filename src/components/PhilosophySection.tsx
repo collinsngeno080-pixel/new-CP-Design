@@ -15,7 +15,7 @@ const philosophyItems = [
     },
     {
         icon: "/images/Keyboard Icon.png",
-        iconSize: 50,
+        iconSize: 39,
         title: "Craft meets code",
         description: "We still build by hand and test every feature in the real world.",
     },
